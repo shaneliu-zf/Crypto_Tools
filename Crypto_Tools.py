@@ -20,14 +20,12 @@ while keep_go:
     print()
     if mode.isdigit(): mode = Filelist[int(mode)-1]
     exec("from bin import "+mode+" as crypto")
-
     mode2=input("encrypto or decrypto? :")[:2]
     print()
-
     x=input("Please input the string:")
     print()
     crypto.crypto(x,mode2)
     print()
     keep_go=input("Use another Crypto? (Y/N) :")
     print()
-    keep_go = True if keep_go == 'Y' else False
+    keep_go = True if keep_go == 'Y' or keep_go == 'y' else False
