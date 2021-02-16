@@ -11,7 +11,7 @@ keep_go = True
 while keep_go:
     print("="*50)
     print()
-    print("here is the list of Crypto")
+    print("here is the list of Cryptos:")
     for i in range(0,len(Filelist)):
         print("[",i+1,"] ",Filelist[i],sep='')
 
